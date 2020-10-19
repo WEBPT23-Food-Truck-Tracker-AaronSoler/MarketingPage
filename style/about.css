@@ -28,7 +28,8 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    display:list-item;
+	/* list-style: none; */
 }
 blockquote, q {
 	quotes: none;
@@ -42,7 +43,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* my css begins below the reset ************************************************* */
+/* my css begins below the meyers reset ************************************************* */
 
 /* set default font size to 10px and use rem for a multiple */
 html {
@@ -132,7 +133,6 @@ header .navContainer a:hover {
 .container {
     display:flex;
     flex-flow:row wrap;
-    /* justify-content:space-evenly; */
     justify-content:center;
     height:80%;
 }
@@ -147,7 +147,7 @@ header .navContainer a:hover {
 .container .item p {
     font-family: 'Acme', sans-serif;
     font-size:1.6vw;
-    text-align:center;
+    text-align:justify;
     margin:10% 5%;
 }
 /* flex items inside middle container for images */
@@ -171,10 +171,12 @@ button:hover {
 }
 /* style for footer */
 footer {
+    background-color:#173F4E;
+    color:white;
     width:100%;
-    margin-top:15%;
-    padding:2% 0;
-    height:8%;
+    margin-top:5%;
+    padding:1% 0;
+    height:5%;
     text-align:center;
     font-size:1.2vw;
     border-top:solid 0.2rem black;
