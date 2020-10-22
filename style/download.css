@@ -1,0 +1,36 @@
+.downloadNow {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-content:flex-start;
+    height:80%;
+    padding:2% 0;
+    background-color:#85AAAA;
+}
+.dlBox {
+    width:40%;
+    height:42%;
+    font-size:1.4vw;
+    margin:0.1% 0.2%;
+    padding:1%;
+    text-align:justify;
+    font-family:Helvetica;
+}
+.dlBox .dlBtnImg {
+    width:32%;
+    height:22%;
+    margin:0 30%;
+}
+.dlBox ul {
+    margin:8% 5%;    
+}
+.dlBox p {
+    font-size:1.4vw;
+    margin:16% 1%;
+}
+.dlPicture {
+    border:0.2rem solid black;
+    width:42%;
+    height:45%;
+    margin:0.1% 0.2%;
+}
