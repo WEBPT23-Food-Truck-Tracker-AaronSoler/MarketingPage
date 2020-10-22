@@ -96,13 +96,15 @@ header .whereAndWhen:hover {
 header .navContainer {
     display:flex;
     flex-flow:row wrap;
-    justify-content:flex-end;
+    justify-content:center;
     margin:0 2%;
     width:45%;
+    background-color:#DDAA00;
 }
 /* the nav items inside the nav - these are flex items of the nav */
 header .navContainer a {
-    color:rgb(207, 67, 67);
+    /* color:rgb(207, 67, 67); */
+    color:#173F4E;
     font-size:1.8vw;
     text-decoration:none;
     margin:1% 1%;
@@ -112,7 +114,8 @@ header .navContainer a {
 /* hover over the anchors to give background color, white font color, and underline for style */
 header .navContainer a:hover {
     color:white;
-    background-color:rgb(207, 67, 67);
+    background-color:#173F4E;
+    /* background-color:rgb(207, 67, 67); */
     border-left:solid 0.2rem black;
     border-right:solid 0.2rem black;
     text-decoration:underline;
@@ -141,6 +144,7 @@ header .navContainer a:hover {
     margin:0.5%;
     width:40%;
     height:34%;
+    background-color:#85AAAA;
     /* border:solid 0.2rem black; */
 }
 /* each box containing a p tag */
@@ -162,12 +166,13 @@ button {
     font-size:2vw;
     margin:0 20%;
     padding:1.5%;
-    border:0.2rem solid rgb(207, 67, 67);
+    /* border:0.2rem solid rgb(207, 67, 67); */
+    border:0.2rem solid #A65111;
 }
 /* final touches on button with inverted colors */
 button:hover {
     color:white;
-    background-color:rgb(207, 67, 67);
+    background-color:#A65111;
 }
 /* style for footer */
 footer {
