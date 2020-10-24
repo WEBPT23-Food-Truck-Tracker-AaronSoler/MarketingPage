@@ -1,6 +1,6 @@
 body {
-    margin:2%;
-    height:400vh;
+    margin:0 2%;
+    height:350vh;
 }
 header {
     display:flex;
@@ -30,7 +30,7 @@ header .navContainer {
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    margin:0 1%;
+    margin:4% 0;
     width:100%;
 }
 /* the nav items inside the nav - these are flex items of the nav */
@@ -57,7 +57,46 @@ header .navContainer a {
 }
 .container {
     display:flex;
-    flex-flow:row wrap;
+    flex-direction:column;
+    flex-wrap:nowrap;
     justify-content:center;
+    align-items:center;
     height:80%;
+    margin:2% 0;
+}
+/* each box (flex item) containing text */
+.container .item {
+    margin:1% 0;
+    width:100%;
+    height:18%;
+    background-color:#85AAAA;
+    /* border:solid 0.2rem black; */
+}
+/* each box containing a p tag */
+.container .item p {
+    font-family: 'Acme', sans-serif;
+    font-size:5vw;
+    text-align:justify;
+    margin:4% 2%;
+}
+/* flex items inside middle container for images */
+.aboutImgSize {
+    width:95%;
+    height:20%;
+    margin:5% 0;
+}
+/* button to link to download page for apple and android */
+button {
+    font-size:6vw;
+    margin:0 20%;
+    padding:1.5%;
+}
+/* style for footer */
+footer {
+    width:100%;
+    height:3%;
+    margin:5%;
+}
+footer h3 {
+    font-size:6vw;
 }

@@ -52,7 +52,7 @@ html {
 /* give the body a page height */
 body {
     margin:0 5%;
-    height:150vh;
+    height:170vh;
 }
 /* header is a flex container with 3 flex items */
 header {
@@ -108,17 +108,18 @@ header .navContainer a {
     font-size:1.8vw;
     text-decoration:none;
     margin:1% 1%;
-    padding:0 2%;
+    padding:1.5% 2%;
     text-align:center;
 }
 /* hover over the anchors to give background color, white font color, and underline for style */
 header .navContainer a:hover {
+
     color:white;
     background-color:#173F4E;
     /* background-color:rgb(207, 67, 67); */
     border-left:solid 0.2rem black;
     border-right:solid 0.2rem black;
-    text-decoration:underline;
+    /* text-decoration:underline; */
 }
 /* a div holding two images right below the header */
 .topDiv {
@@ -172,7 +173,7 @@ button {
 /* final touches on button with inverted colors */
 button:hover {
     color:white;
-    background-color:#A65111;
+    background-color:#DDAA00;
 }
 /* style for footer */
 footer {
@@ -185,4 +186,4 @@ footer {
     text-align:center;
     font-size:1.2vw;
     border-top:solid 0.2rem black;
-}
+} 
