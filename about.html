@@ -7,23 +7,22 @@
     <title>FoodTruck TrackR - About</title>
     <link rel="stylesheet" type="text/css" href="style/about.css">
     <link rel="stylesheet" media="screen and (max-width:500px)" href="style/aboutMobile.css">
-    <link rel="stylesheet" media="screen and (max-width:800px)" href="style/aboutTablet.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');</style>
     <style>@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');</style>
 </head>
 <body>
     <!-- header with 3 flex items -->
-    <header>
+    <header id="theHeader">
         <!-- first flex item -->
         <div class="iconBox">
-            <img class="resizeImg" src="images/FoodTruck TrackR App Icon.PNG" alt="app icon - gps marker for food trucks">
+            <img class="resizeImg" id="theBigIcon" src="images/FoodTruck TrackR App Icon.PNG" alt="app icon - gps marker for food trucks">
         </div>
         <!-- second flex item -->
-        <div class="whereAndWhen">
+        <div class="whereAndWhen" id="theWhere">
             <h1>WhereWhenWhere?<br>WhenWhereWhen?<br>WhereWhenWhere?</h1>
         </div>
         <!-- nav is third flex item -->
-        <nav class="navContainer">
+        <nav class="navContainer" id="theNav">
             <a target="_self" class="navItem" href="home.html">Home</a>
             <a target="_self" class="navItem" href="about.html">About</a>
             <a target="_self" class="navItem" href="favorite.html">Favorites</a>
@@ -31,30 +30,32 @@
         </nav>
     </header>
     <!-- images after header and before middle container -->
-    <div class="topDiv">
-        <img src="images/food_heading.jpg" class="topImg" title="gourmet sandwiches off food truck">
-        <img src="images/more_grill.jpg" class="topImg" title="food truck cook grilling hotdogs">
+    <div class="topDiv" id="theTop">
+        <img src="images/food_heading.jpg" class="topImg" id="theFirst" title="gourmet sandwiches off food truck">
+        <img src="images/more_grill.jpg" class="topImg" id="theSecond" title="food truck cook grilling hotdogs">
     </div>
     <!-- flex container for about page -->
-    <div class="container">
+    <div class="container" id="theContainer">
         <!-- first flex item with text -->
-        <div class="item">
-            <p>Operators run the trucks.<br><br>Diners run after the trucks.
-            <br><br>Both can use the FoodTruck TrackR app.
-            <br><br>Which one are you?</p>
+        <div class="item" id="theItem1">
+            <p>Operators run the trucks.<br><br>
+            Diners run after the trucks.<br><br>
+            Both can use the FoodTruck TrackR app.<br><br>
+            Which one are you?</p>
         </div>
         <!-- second flex item with image -->
-        <img src="images/blue_truck.jpg" class="aboutImgSize"  title="a food truck operator takes a diner's order">
+        <img src="images/blue_truck.jpg" id="theImg1" class="aboutImgSize"  title="a food truck operator takes a diner's order">
         <!-- third flex item with image -->
-        <img src="images/foodie.jpg" class="aboutImgSize"  title="a group of foodies having a meal courtesy of the food trucks found with food truck trackR">
+        <img src="images/foodie.jpg" class="aboutImgSize" id="theImg2"  title="a group of foodies having a meal courtesy of the food trucks found with food truck trackR">
         <!-- fourth flex item with text -->
-        <div class="item">
-            <p>Are you a foodie?<br><br>Word-of-mouth isn't enough to pin down your favorite food truck?
-                <br><br>FoodTruck TrackR app can help.
-            <br><br>Real-time GPS to track the best food in the city making it fast, easy and fun.</p>
+        <div class="item" id="theItem2">
+            <p>Are you a foodie?<br><br>
+            Word-of-mouth isn't enough to pin down your favorite food truck?<br><br>
+            FoodTruck TrackR app can help.<br><br>
+            Real-time GPS to track the best food in the city making it fast, easy and fun.</p>
         </div>
         <!-- fifth flex item with text -->
-        <div class="item">
+        <div class="item" id="theItem3">
             <p>Arrival and departure times for all foodtrucks.
             <br><br>Diners, stop chasing after these trucks.
             <br><br>Operators, stop missing out on potential diners.
@@ -62,9 +63,9 @@
             <button onclick = "location.href='download.html';" type="button">Download TrackR</button>
         </div>
         <!-- sixth flex item with image -->
-        <img src="images/gps.jpg" class="aboutImgSize" title="a diner or customer happily using the food truck trackR app on their smartphone">
+        <img src="images/gps.jpg" class="aboutImgSize" id="theImg3" title="a diner or customer happily using the food truck trackR app on their smartphone">
     <!-- footer with copyright -->
-    <footer>
+    <footer id="footerAb">
         <div>
             <h3>&copy 2020 FoodTruck TrackR</h3>
         </div>

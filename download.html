@@ -8,23 +8,21 @@
     <link rel="stylesheet" type="text/css" href="style/download.css">
     <link rel="stylesheet" type="text/css" href="style/about.css">
     <link rel="stylesheet" media="screen and (max-width:500px)" href="style/aboutMobile.css">
-    
-    <link rel="stylesheet" media="screen and (max-width:800px)" href="style/tabletDL.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');</style>
     <style>@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');</style>
 </head>
 <body>
-    <header>
+    <header id="headerDL">
         <!-- first flex item -->
         <div class="iconBox">
-            <img class="resizeImg" src="images/FoodTruck TrackR App Icon.PNG" alt="app icon - gps marker for food trucks">
+            <img class="resizeImg" id="gpsIcon" src="images/FoodTruck TrackR App Icon.PNG" alt="app icon - gps marker for food trucks">
         </div>
         <!-- second flex item -->
-        <div class="whereAndWhen">
+        <div class="whereAndWhen" id="whereWhen">
             <h1>DownloadHere<br>DownloadThere<br>DownloadAnywhere</h1>
         </div>
         <!-- nav is third flex item -->
-        <nav class="navContainer">
+        <nav class="navContainer" id="tabletNav">
             <a target="_self" class="navItem" href="home.html">Home</a>
             <a target="_self" class="navItem" href="about.html">About</a>
             <a target="_self" class="navItem" href="favorite.html">Favorites</a>
