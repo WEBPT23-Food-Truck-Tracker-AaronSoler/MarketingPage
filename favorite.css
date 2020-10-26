@@ -50,10 +50,10 @@ table {
 /*Start CSS Here*/
 
 :root {
-	--primary: #ddd;
-	--dark: #333;
-	--light: #fff;
-	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+	--primary: #173F4E;
+	--dark: #A65111;
+	--light: #FFB304;
+	--shadow: 0 1px 5px #7C5D3D(104, 104, 104, 0.8);
   }
   
   html {
@@ -63,7 +63,7 @@ table {
   }
   
   body {
-	background: #ccc;
+	background: #85AAAA;
 	margin: 30px 50px;
 	line-height: 1.4;
   }
@@ -228,8 +228,8 @@ table {
   /* Footer */
   footer {
 	margin-top: 2rem;
-	background: var(--dark);
-	color: var(--light);
+	background: 173F4E;
+	color: 173F4E;
 	text-align: center;
 	padding: 1rem;
   }

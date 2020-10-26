@@ -51,7 +51,8 @@ table {
 /*CSS Starts Here*/
 html, body {
 	height: 100%;
-	width: 100%;
+    width: 100%;
+    background-color: #173F4E;
 }
 
 body {
@@ -62,6 +63,7 @@ body {
 p {
     line-height: 1.4;
     text-align: center;
+    color: #DDAA00;
 }
 
 header {
@@ -76,6 +78,8 @@ header {
     justify-content: center;
 }
 
+/*Nav and Button Css*/
+
 nav span{
     border-left:3px solid #626262;
 
@@ -89,9 +93,10 @@ nav span{
 }
 
 nav button {
-    width: 150px;
+    width: 145px;
     height: 50px;
-    background-color: white;
+    background-color: #A65111;
+    color: #173F4E;
     border: transparent solid 2px;
 	border-radius: 0px;
 	justify-content: ;
@@ -100,7 +105,7 @@ nav button {
 button:hover{
     background-color:#626262;
     border:2px solid white;
-    color:white;
+    color: #DDAA00;
     box-shadow: 2px 2px 1px white;
 }
 
@@ -117,6 +122,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
     text-align: center;
+    color: #85aaaa
 }
 
 img {	
@@ -133,6 +139,7 @@ img:hover {
     opacity: 80%;	
 }
 
+/*Container and Content*/
 .container {
     display: block;
     text-align: center;
@@ -145,7 +152,7 @@ img:hover {
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    border-bottom: 1px dashed #A65111;
 }
 
 .top-content .text-container {
@@ -156,7 +163,7 @@ img:hover {
 
 .middle-content {
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    border-bottom: 1px dashed #A65111
 }
 
 .middle-content h2 {
@@ -164,13 +171,15 @@ img:hover {
     margin-bottom: 0;
 }
 
+/*Footer*/
 footer {
     width: 100%;
 }
 
 #image-container {
 	background-image: url(https://images.unsplash.com/photo-1570441262582-a2d4b9a916a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80);
-	background-position: center;
+    background-position: center;
+    background-size: contain;
 	padding: 5%;
 }
 
@@ -189,3 +198,52 @@ footer nav a {
 	border-radius: 0px;
 	justify-content: space-between;
 }
+
+/*Media*/
+
+@media (min-width: 800px) {
+
+}
+
+
+@media (max-width: 500px) {
+    
+    header {
+        justify-content: center;
+    }
+    
+    header nav button{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .container .top img{
+        display: flex;
+        justify-content: center;        
+    }
+
+    top-content .text-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer nav button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #image-container {
+        background-image: url(https://images.unsplash.com/photo-1570441262582-a2d4b9a916a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80);
+    }
+}
+
