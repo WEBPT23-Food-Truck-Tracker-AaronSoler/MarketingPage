@@ -7,23 +7,21 @@
     <title>FoodTruck TrackR - Download</title>
     <link rel="stylesheet" type="text/css" href="style/download.css">
     <link rel="stylesheet" type="text/css" href="style/about.css">
-    <link rel="stylesheet" media="screen and (max-width:500px)" href="style/mobileDL.css">
-    <link rel="stylesheet" media="screen and (max-width:800px)" href="style/tabletDL.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');</style>
     <style>@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');</style>
 </head>
 <body>
-    <header>
+    <header id="headerDL">
         <!-- first flex item -->
         <div class="iconBox">
-            <img class="resizeImg" src="images/FoodTruck TrackR App Icon.PNG" alt="app icon - gps marker for food trucks">
+            <img class="resizeImg" id="gpsIcon" src="images/FoodTruck TrackR App Icon.PNG" alt="app icon - gps marker for food trucks">
         </div>
         <!-- second flex item -->
-        <div class="whereAndWhen">
+        <div class="whereAndWhen" id="whereWhen">
             <h1>DownloadHere<br>DownloadThere<br>DownloadAnywhere</h1>
         </div>
         <!-- nav is third flex item -->
-        <nav class="navContainer">
+        <nav class="navContainer" id="tabletNav">
             <a target="_self" class="navItem" href="home.html">Home</a>
             <a target="_self" class="navItem" href="about.html">About</a>
             <a target="_self" class="navItem" href="favorite.html">Favorites</a>
@@ -31,41 +29,58 @@
         </nav>
     </header>
     <!-- main body on download page, downloadNow is a flex container  -->
-    <div class="downloadNow"> 
+    <div class="downloadNow" id="downloadNowHeight"> 
         <!-- flex item 1 for text -->
         <div class="dlBox">
-            <ul>
+            <p>
+                Frustrated that you keep missing that food truck?<br><br>
+                Try our reliable, real-time GPS tracking.<br><br>
+                Forget the frustrations with FoodTruck TrackR.<br><br>
+                Download the app on iPhone or Android!
+            </p>
+            <!-- <ul>
                 <li>Frustrated that you keep missing that food truck?</li><br>
                 <li>Try our reliable, real-time GPS tracking.</li><br>
                 <li>Forget the frustrations with FoodTruck TrackR.</li><br>
                 <li style="font-weight:bold">Download the app on iPhone or Android!</li>
-            </ul>
+            </ul> -->
             <a href="#">
                 <img src="images/black.svg" alt="download with app store" class="dlBtnImg">
             </a>
         </div>
         <!-- flex item 2, img with dlPicSize class -->
         <img src="images/iphone.jpg" class="dlPicture" title="use the app store with an iPhone to get the foodtruck trackR app">
+        <!-- flex item in between the images -->
+        <!-- <div class="inBetween">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed eros quis ante rhoncus consectetur. Vivamus ut ante sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam nec molestie erat. Nulla ut diam nisi. Etiam aliquam a purus et ultricies. Ut et est nulla. Phasellus libero sapien, fringilla blandit tortor non, dignissim fringilla leo. Curabitur nec rhoncus justo. Sed at pharetra dolor, in lobortis purus. Duis aliquet est ac lorem laoreet posuere. Cras at urna id erat accumsan porttitor.
+        </div> -->
         <!-- flex item 3, img with dlPicSize class -->
         <img src="images/trackR.jpg" class="dlPicture" title="use google play store with an Android phone to get the foodtruck trackR app">
         <!-- flex item 4 for text  -->
         <div class="dlBox">
-            <ul>
+            <p> You'll find an amazing amount of food choices.<br><br>
+                The best and busiest food trucks.<br><br>
+                Special deals and discounts.<br><br>
+                Find local events and festivals.<br><br>
+                Book catering events for special days.<br><br>
+                Download for free!
+            </p>
+            <!-- <ul>
                 <li>You'll find an amazing amount of food choices.</li><br>
                 <li>The best and busiest food trucks.</li><br>
                 <li>Special deals and discounts.</li><br>
                 <li>Find local events and festivals.</li><br>
                 <li>Book catering events for special days.</li><br>
                 <li style="font-weight:bold">Download for free!</li>
-            </ul>
+            </ul> -->
             <a href="#">
-                <img src="images/google-play.png" alt="download with google play store" class="dlBtnImg">
+                <img src="images/google-play.png" alt="download with google play store" class="dlBtnImg"/>
             </a>
         </div>
     </div>
     <!-- footer with copyright -->
-    <footer>
-        <div>
+    <footer class="footDL">
+        <div class="space">
             <h3>&copy 2020 FoodTruck TrackR</h3>
         </div>
     </footer>
