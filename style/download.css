@@ -1,0 +1,154 @@
+.downloadNow {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-content:flex-start;
+    height:80%;
+    padding:1% 0;
+    background-color:#85AAAA;
+}
+.dlBox {
+    width:40%;
+    height:42%;
+    font-size:1.4vw;
+    margin:0.1% 0.2%;
+    padding:1%;
+    text-align:justify;
+    font-family:Helvetica;
+}
+.dlBox .dlBtnImg {
+    width:32%;
+    height:22%;
+    margin:0 30%;
+}
+.dlBox p {
+    font-size:1.4vw;
+    margin:15% 1%;
+}
+.dlPicture {
+    border:0.2rem solid black;
+    width:42%;
+    height:45%;
+    margin:0.1% 0.2%;
+}
+
+/* 800px break point for tablet page width */
+@media (max-width: 800px) {
+    body {
+        margin:0 3%;
+        height:250vh;
+    }
+    /* nav and header */
+    header#headerDL {
+        height:25%;
+        width:100%;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        align-content:space-evenly;
+    }
+    img#gpsIcon {
+        width:70%;
+    }
+    #tabletNav {
+        width:100%;
+    }
+    #tabletNav a {
+        font-size:4.5vw;
+    }
+    #whereWhen h1 {
+        font-size:5vw;
+        width:9 0%;
+    }
+    header #whereWhen.whereAndWhen {
+        margin:1% 3%;
+        width:60%;
+    }
+    .downloadNow {
+        display:flex;
+        flex-direction:column;
+        flex-wrap:nowrap;
+        justify-content:flex-start;
+        align-items:center;
+        width:95%;
+        height:140%;
+        padding:1% 2%;
+    }
+    .dlPicture {
+        width:82%;
+        height:25%;
+        margin:10% 0;
+    }
+    .dlBox {
+        width:78%;
+        height:26%;
+        margin:1%;
+        padding:4% 1%;
+    }
+    .dlBox p {
+        font-size:3vw;
+    }
+    .dlBox .dlBtnImg {
+        width:46%;
+        height:22%;
+    }
+    footer.footDL {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+        height:3%;
+        margin:5% 0;
+    }
+    div.space h3 {
+        font-size:4.5vw;
+    }
+} 
+
+@media (max-width: 500px) {
+    body {
+        margin:0 3%;
+        height:100vh;
+    }
+    .downloadNow {
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width:95%;
+        height:120%;
+        padding:1% 2%;
+    }
+    .dlBox {
+        width:98%;
+        height:23%;
+        /* margin:1%; */
+    }
+    .dlBox p {
+        font-size:4vw;
+        line-height:1.5;
+        color:white;
+        /* padding:1% 5%; */
+    }
+    .dlPicture {
+        width:100%;
+        height:17%;
+        margin:10% 0;
+    }
+    .dlBox .dlBtnImg {
+        width:50%;
+        height:25%;
+    }
+    /* style for footer */
+    footer.footDL {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+        height:3%;
+        margin:5% 0;
+    }
+    div.space h3 {
+        font-size:6vw;
+    }
+}

@@ -1,0 +1,382 @@
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+    display:list-item;
+	/* list-style: none; */
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* my css begins below the meyers reset ************************************************* */
+
+/* set default font size to 10px and use rem for a multiple */
+html {
+    font-size:10px;
+}
+/* give the body a page height */
+body {
+    margin:0 5%;
+    height:170vh;
+}
+/* header is a flex container with 3 flex items */
+header {
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    height:22%;
+}
+/* first header flex item - div holding the FoodTruck TrackR app icon */
+.iconBox {
+    border:solid 0.2rem dashed;
+    width:25%;
+    margin:1% 2%;
+}
+/* class on image of icon, percents are portion of iconBox class */
+header .resizeImg {
+    height:100%;
+    width:50%;
+}
+/* hover over the icon to move it right by inserting padding on the left */
+header .resizeImg:hover  {
+    padding-left:50%;
+}
+/* second flex item in header, main title of about page */
+header .whereAndWhen {
+    width:30%;
+    text-align:center;
+}
+/* the h1 is inside the class whereAndWhen of div */
+header .whereAndWhen h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size:2.7vw;
+    margin:1%;
+}
+/* hover over the title and it will become lowercase and have text shadow */
+header .whereAndWhen:hover {
+    text-transform:lowercase;
+    text-shadow:0.2rem 0.2rem rgb(207, 67, 67); 
+}
+/* third flex item inside header, holding nav items */
+header .navContainer {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    margin:0 2%;
+    width:45%;
+    background-color:#DDAA00;
+}
+/* the nav items inside the nav - these are flex items of the nav */
+header .navContainer a {
+    /* color:rgb(207, 67, 67); */
+    color:#173F4E;
+    font-size:1.8vw;
+    text-decoration:none;
+    margin:1% 1%;
+    padding:1.5% 2%;
+    text-align:center;
+}
+/* hover over the anchors to give background color, white font color, and underline for style */
+header .navContainer a:hover {
+
+    color:white;
+    background-color:#173F4E;
+    /* background-color:rgb(207, 67, 67); */
+    border-left:solid 0.2rem black;
+    border-right:solid 0.2rem black;
+    /* text-decoration:underline; */
+}
+/* a div holding two images right below the header */
+.topDiv {
+    display:flex;
+    justify-content:center;
+    height:35%;
+    margin-bottom:5%;
+}
+/* the two images inside the topDiv class in div */
+.topDiv .topImg {
+    width:50%;
+    height:100%;
+}
+/* middle page container (flex container) - text and advertising for app */
+.container {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    height:80%;
+}
+/* each box (flex item) containing text */
+.container .item {
+    margin:0.5%;
+    width:40%;
+    height:34%;
+    background-color:#85AAAA;
+    /* border:solid 0.2rem black; */
+}
+/* each box containing a p tag */
+.container .item p {
+    font-family: 'Acme', sans-serif;
+    font-size:1.6vw;
+    text-align:justify;
+    margin:10% 5%;
+}
+/* flex items inside middle container for images */
+.aboutImgSize {
+    width:40%;
+    height:34%;
+    margin:0.5%;
+}
+/* button to link to download page for apple and android */
+button {
+    color:black;
+    font-size:2vw;
+    margin:0 20%;
+    padding:1.5%;
+    /* border:0.2rem solid rgb(207, 67, 67); */
+    border:0.2rem solid #A65111;
+}
+/* final touches on button with inverted colors */
+button:hover {
+    color:white;
+    background-color:#DDAA00;
+}
+/* style for footer */
+footer {
+    background-color:#173F4E;
+    color:white;
+    width:100%;
+    margin-top:5%;
+    padding:1% 0;
+    height:5%;
+    text-align:center;
+    font-size:1.2vw;
+    border-top:solid 0.2rem black;
+}
+/* 800px media query for about page */
+@media (max-width: 800px) {
+    #theHeader {
+        flex-flow:row wrap;
+        justify-content:flex-start;
+    }
+    img#theBigIcon {
+        width:75%;
+    }
+    #theNav {
+        width:100%;
+    }
+    #theNav a {
+        font-size:4.5vw;
+    }
+    #theHeader #theWhere {
+        width:70%;
+    }
+    #theHeader #theWhere h1 {
+        font-size:5vw;
+    }
+    #theTop {
+        height:70%;
+        flex-direction:column;
+        justify-content:space-around;
+        align-items:center;
+    }
+    #theTop #theFirst, #theTop #theSecond {
+        width:100%;
+        height:35%;
+        margin:2% 0;
+    }
+    #theContainer {
+        height:350vh;
+        flex-direction:column;
+        flex-wrap:nowrap;
+        justify-content: space-evenly;
+        align-items:center;
+    }
+    #theItem1 {
+        width:100%;
+        height:13%;
+    }
+    #theItem1 p {
+        font-size:4vw;
+        font-weight:bold;
+    }
+    #theItem2 {
+        width:100%;
+        height:13%;
+    }
+    #theItem2 p {
+        font-size:4vw;
+        font-weight:bold;
+    }
+    #theItem3 {
+        width:100%;
+        height:13%;
+    }
+    #theItem3 p {
+        font-size:4vw;
+        font-weight:bold;
+    }
+    #theItem3 button {
+        font-size:5vw;
+    }
+    #theImg1 {
+        width:100%;
+        height:13%;
+    }
+    #theImg2 {
+        width:100%;
+        height:13%;
+    }
+    #theImg3 {
+        width:100%;
+        height:13%;
+    }
+    #footerAb {
+        height:1%;
+        width:100%;
+        text-align:center;
+    }
+    #footerAb h3 {
+        color:white;
+        font-size:2.5vw;
+        margin-top:1.5%;
+    }
+}
+/* 500px break point for mobile */
+/*
+@media (max-width: 500px) {
+    body {
+        margin:0 2%;
+        height:340vh;
+    }
+    header {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+        align-items:center;
+        height:15%;
+    }
+    header .resizeImg {
+        height:100%;
+        width:100%;
+    }
+    header .resizeImg:hover  {
+        padding-left:80%;
+    }
+    header .whereAndWhen {
+        width:100%;
+        text-align:center;
+    }
+    header .whereAndWhen h1 {
+        font-family: 'Permanent Marker', cursive;
+        font-size:7vw;
+        margin:1% 3%;
+    }
+    header .navContainer {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin:4% 0;
+        width:100%;
+    }
+    
+    header .navContainer a {
+        color:rgb(207, 67, 67);
+        font-size:4.5vw;
+        text-decoration:none;
+        margin:1% 3%;
+        padding:2%;
+        text-align:center;
+    }
+    .topDiv {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        height:20%;
+        margin-bottom:3%;
+    }
+    
+    .topDiv .topImg {
+        width:100%;
+        height:50%;
+    }
+    .container {
+        display:flex;
+        flex-direction:column;
+        flex-wrap:nowrap;
+        justify-content:center;
+        align-items:center;
+        height:80%;
+        margin:2% 0;
+    }
+    
+    .container .item {
+        margin:1% 0;
+        width:100%;
+        height:18%;
+        background-color:#85AAAA;
+    }
+    .container .item p {
+        font-family: 'Acme', sans-serif;
+        font-size:5vw;
+        text-align:justify;
+        margin:4% 2%;
+    }
+    
+    .aboutImgSize {
+        width:95%;
+        height:20%;
+        margin:5% 0;
+    }
+    
+    button {
+        font-size:6vw;
+        margin:0 20%;
+        padding:1.5%;
+    }
+    
+    footer {
+        width:100%;
+        height:3%;
+        margin:5%;
+    }
+    footer h3 {
+        font-size:6vw;
+    }
+} */
